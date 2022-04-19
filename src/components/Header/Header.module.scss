@@ -1,0 +1,66 @@
+
+$main-blue: #0063B2;
+
+.header {
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-family: "Mon";
+    height: 90px;
+}
+.leftBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    font-size: 28px;
+    color: #fff;
+    font-family: "Lato";
+    background-color: $main-blue;
+}
+.navbarBlock {
+    display: flex;
+    flex: 1;
+}
+.navbar {
+    display: flex;
+    flex: 0 1 28%;
+    justify-content: space-around;
+    align-items: center;
+    color: $main-blue;
+    font-weight: 700;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    @media only screen and (max-width: 1700px){
+        flex: 0 1 35%;
+        }
+        @media only screen and (max-width: 1500px){
+            flex: 0 1 38%;
+            }
+            @media only screen and (max-width: 1300px){
+                flex: 0 1 45%;
+                }
+}
+.rightBtnBlock {
+    padding: 0px 8px 4px 17px;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: #8D8D8D;
+    border-left: 1px solid #C7C7C7;
+}
+.arrow {
+    position: relative;
+    right: 11px;
+    top: 7px;
+}
+.rightBtn {
+    cursor: pointer;
+}
+.bg {
+    height: 398px;
+    background: url("./imgs/bg.png") 0 0/auto auto no-repeat;
+}

@@ -1,0 +1,24 @@
+.blueCard {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 720px;
+    height: 353px;
+    padding: 70px 55px 50px 127px;
+    background-color: #6279FF;
+    letter-spacing: 0.1em;
+}
+.title {
+    padding-bottom: 16px;
+    font-size: 22px;
+    color: #fff;
+    font-family: "PT Serif";
+    font-weight: 700;
+}
+.text {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat";
+    line-height: 30px;
+    font-weight: 500;
+}
