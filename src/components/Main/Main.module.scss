@@ -1,0 +1,115 @@
+@mixin reverseCard {
+    padding: 68px 127px 30px 55px;
+    text-align: right;
+}
+.wrapper {
+    position: relative;
+    max-width: 1920px;
+}
+.container {
+    width: 1276px;
+    margin:  0 auto;
+    position: relative;
+}
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    text-align: center;
+}
+.title {
+    font-family: "PT Serif";
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 36px;
+}
+.text {
+    margin: 0 auto;
+    max-width: 65%;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+}
+.ladderContainer {
+    position: relative;
+    margin-top: 90px;
+}
+.ladderLi {
+    position: relative;
+}
+.imgFig {
+    position: absolute;
+    bottom: -80px;
+    transform:translate(-50%, -50%);
+    left: 50%;
+    color: #504A4A;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: "Montserrat";
+}
+.blueCard {
+    width: 720px;
+    height: 353px;
+    background-color: #6279FF;
+    padding: 68px 55px 30px 127px;
+    text-align: left;
+}
+.blueCardEven {
+    @include reverseCard;
+}
+.blueCardTitle {
+    padding-bottom: 16px;
+    font-size: 22px;
+    color: #fff;
+    font-family: "PT Serif";
+    font-weight: 700;
+    letter-spacing: 0.1em; 
+}
+.blueCardText {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat";
+    line-height: 30px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.ladder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & :nth-child(even) {
+        align-self: end;
+    }
+    & li:not(:first-child) {
+        margin-top: 202px;
+    }
+}
+.blueCards {
+    position: absolute;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: -100;
+    width: 100%;
+    & :nth-child(odd) {
+        align-self: flex-end;
+        
+    }
+    & li:not(:first-child) {
+        margin-top: 260px;
+    }
+}
+.cloudBlock {
+    position: absolute;
+    right: -290px;
+    bottom: -180px;
+    cursor: pointer;
+}
+.wrapper {
+    padding-bottom: 160px;
+}
+

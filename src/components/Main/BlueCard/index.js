@@ -1,2 +1,2 @@
-import BlueCard from "../BlueCard"
+import BlueCard from "./BlueCard";
 export default BlueCard
