@@ -1,6 +1,6 @@
-import React from "react";
 
 import styles from "./Main.module.scss";
+import BlueCard from "./BlueCard";
 
 import img1 from "./imgs/img1.png";
 import img2 from "./imgs/img2.png";
@@ -9,6 +9,7 @@ import img4 from "./imgs/img4.png";
 import cloud from "./imgs/cloud.png"
 
 const Main = () => {
+
   return (
     <div className={styles.wrapper}>
       
@@ -52,7 +53,10 @@ const Main = () => {
             </li>
           </ul>
           <ul className={styles.blueCards}>
-            
+            <li><BlueCard /></li>
+            <li><BlueCard even="even"/></li>
+            <li><BlueCard /></li>
+            <li><BlueCard even="even"/></li>
           </ul>
         </div>
       </div>
