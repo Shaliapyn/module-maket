@@ -1,0 +1,48 @@
+.footerBlock {
+    padding-top: 162px;
+}
+.leftBlock {
+    width: 50%;
+    height: 700px;
+    background: linear-gradient(to top, rgba(0,99,178, 0.8), rgba(0,99,178, 0.8)), url("./imgs/Mask\ Group.png") 100%/auto no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Lato";
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-height: 250px;
+    justify-content: space-between;
+    flex: 0 1 45%;
+    text-transform: lowercase;
+    line-height: 30px;
+    & li {
+        display: flex;
+        align-items: center;
+    }
+}
+.icon {
+    margin-right: 40px;
+}
+.rightBlock {
+    width: 50%;
+}
+.footerLast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    background-color: #14202D;
+}
