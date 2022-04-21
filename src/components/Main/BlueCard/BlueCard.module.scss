@@ -1,6 +1,9 @@
 @mixin reverseCard {
     padding: 68px 127px 30px 55px;
     text-align: right;
+    @media only screen and (max-width: 1310px){
+        padding: 68px 150px 30px 55px;
+        }
 }
 
 .blueCard {
@@ -9,6 +12,10 @@
     background-color: #6279FF;
     padding: 68px 55px 30px 127px;
     text-align: left;
+    @media only screen and (max-width: 1310px){
+        padding: 68px 55px 30px 150px;
+        }
+    
 }
 .blueCardEven {
     @include reverseCard;
